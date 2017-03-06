@@ -1,0 +1,15 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: ADPIOTTestApp
+  host: ADPIOTTestApp
+  disk_quota: 1024M
+  services:
+  - ADPIOTTestApp-cloudantNoSQLDB
+  - ADPIOTTestApp-iotf-service
+  - availability-monitoring-auto
+  env:
+    NODE_RED_USERNAME: app1adp
+    NODE_RED_PASSWORD: UPS2017
